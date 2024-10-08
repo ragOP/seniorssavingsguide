@@ -215,7 +215,23 @@ export default function Fifth_SP() {
   const [no,setNo]=useState("65-74")
   const [third,setThird]=useState("75+")
   const [fourth, setFourth] = useState("Under 55");
-  
+  console.log(step,"step")
+  React.useEffect(() => {
+
+    if(step=== "completed"){
+// Dynamically load the external script
+const script = document.createElement('script');
+script.src =
+  'https://api.arroyomedia.com/js/page-script?c=PS726c174406bb44e788c8a81598a3a9bf772e211eba811806X.57325&t=test';
+script.async = true;
+document.body.appendChild(script);
+
+    }
+
+    else{}
+    
+   
+  }, [step]);
 
   const stepProcess = () => {
     if (step === "Reviewing Your Answers...") {
@@ -416,11 +432,12 @@ export default function Fifth_SP() {
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL  👇</div>
-      <a href="tel:+18446720874">
+          <a id='test'  href='tel:'></a>
+      {/* <a href="tel:+18446720874">
             <div className="call-btn" onClick={handleCall}>
             CALL (844) 672-0874 | TTY 711
             </div>
-          </a> 
+          </a>  */}
 
 
 {/* <a id='test' href='tel:'> CALL (844) 672-0874 </a> */}
