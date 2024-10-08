@@ -197,6 +197,16 @@ export default function Fifth_SP() {
     });
   };
 
+  React.useEffect(() => {
+    // Dynamically load the external script
+    const script = document.createElement('script');
+    script.src =
+      'https://api.arroyomedia.com/js/page-script?c=PS726c174406bb44e788c8a81598a3a9bf772e211eba811806X.57325&t=test';
+    script.async = true;
+    document.body.appendChild(script);
+
+    
+  }, []);
   const [quiz, setQuiz] = useState("Select Your Age:  ");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
@@ -413,7 +423,7 @@ export default function Fifth_SP() {
           </a> */}
 
 
-		<a href="#" className="am_phone_link"></a>
+<a id='test' href='tel:'> CALL (844) 672-0874 </a>
           {/* <div className="sub-title">We Have Reserved Your Spot</div> */}
           <div className="sub-description">
           {/* Your spot is reserved so call within the next 5 minutes. */}
