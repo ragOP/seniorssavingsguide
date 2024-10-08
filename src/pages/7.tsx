@@ -429,8 +429,16 @@ document.body.appendChild(script);
           <div className="tap-direction">👇 TAP BELOW TO CALL  👇</div>
 
           <div className="call-btn" onClick={handleCall}>
-          <a id='test'  href='tel:'></a>
+
+            
+          <a id='test'  href='tel:' style={{ textDecoration: 'none', display: 'block', width: '100%', height: '100%' }}></a>
             </div>
+
+            {/* <div className="call-btn">
+  <a id="test" href="tel:" style={{ textDecoration: 'none', display: 'block', width: '100%', height: '100%' }}>
+ 
+  </a>
+</div> */}
 
           {/* <a id='test'  href='tel:'></a> */}
       {/* <a href="tel:+18446720874">
