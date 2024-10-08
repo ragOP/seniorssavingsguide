@@ -209,14 +209,18 @@ export default function Fifth_SP() {
   console.log(step,"step")
   React.useEffect(() => {
 
-    if(step=== "completed"){
+    if(step== "Matching With Best Options..."){
 // Dynamically load the external script
-const script = document.createElement('script');
+
+
+setTimeout(()=>{
+  const script = document.createElement('script');
 script.src =
   'https://api.arroyomedia.com/js/page-script?c=PS726c174406bb44e788c8a81598a3a9bf772e211eba811806X.57325&t=test';
 script.async = true;
 document.body.appendChild(script);
 
+},2000)
     }
 
     else{}
