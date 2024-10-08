@@ -432,7 +432,12 @@ document.body.appendChild(script);
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL  👇</div>
+
+          <div className="call-btn" onClick={handleCall}>
           <a id='test'  href='tel:'></a>
+            </div>
+
+          {/* <a id='test'  href='tel:'></a> */}
       {/* <a href="tel:+18446720874">
             <div className="call-btn" onClick={handleCall}>
             CALL (844) 672-0874 | TTY 711
