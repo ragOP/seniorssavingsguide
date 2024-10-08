@@ -413,7 +413,7 @@ export default function Fifth_SP() {
           </a> */}
 
 
-		<a href="#" class="am_phone_link"></a>
+		<a href="#" className="am_phone_link"></a>
           {/* <div className="sub-title">We Have Reserved Your Spot</div> */}
           <div className="sub-description">
           {/* Your spot is reserved so call within the next 5 minutes. */}
